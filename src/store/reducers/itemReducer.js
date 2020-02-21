@@ -7,6 +7,11 @@ const initState = {
 }
 
 const itemReducer = ( state = initState, action) => {
+    // eslint-disable-next-line default-case
+    switch(action.type){
+        case 'CREATE_ITEM':
+            console.log('created', action.item)
+    }
     return state
 }
 
